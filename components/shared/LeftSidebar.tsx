@@ -5,8 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 
-
-
 const LeftSidebar = () => {
 
   const pathname = usePathname();
@@ -40,7 +38,7 @@ const isActive = (
       </div>\
       <div className="mt-10 px-6">
       <SignedIn>
-            <SignOutButton signOutCallback = {() => router.push('/sign-in')}>
+            <SignOutButton signOuthCallback = {() => router.push('/sign-in')}>
               <div className="flex cursor-pointer gap-4 p-4">
                 <Image
                   src={"/assets/logout.svg"}
